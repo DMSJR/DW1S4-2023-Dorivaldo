@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+        body {
+
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            
+
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            justify-content: center;
+            
+
+
+        }
+
+        .flexbox>div {
+            padding: 10px;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body
+    style="background-image: url(https://cdn.pixabay.com/photo/2015/02/24/10/19/rectangles-647267_1280.jpg); background-repeat: no-repeat; background-size: cover; ">
+
+    <h1 style="text-align: center;">Praticando 2 - formulário HTML estilizado</h1>
+
+    <form action="action_page.php">
+        <div class="flexbox">
+            <div>
+                <label for="fname">Primeiro nome: </label>
+                <input type="text" id="fname" name="fname" value="Dorivaldo"><br>
+            </div>
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" value="seu@email.aqui"><br>
+            </div>
+            <div>
+                <label for="carro">Marca de carro preferida: </label>
+                <select name="carro" id="carro">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="obs">Observações</label><br>
+                <textarea id="obs" name="obs" rows="4" cols="50"></textarea><br>
+            </div>
+            <div>
+                <label for="html">Linguagem Web Favorita: </label>
+                <input type="radio" id="html" name="linguagemFavorita" value="HTML">
+                <label for="html"><img src="./html5.jpg" alt="" width="50vw"> </label>
+                <input type="radio" id="CSS" name="linguagemFavorita" value="CSS">
+                <label for="CSS"><img src="./css3.jpg" width="50vw"> </label>
+                <input type="radio" id="PHP" name="linguagemFavorita" value="PHP">
+                <label for="PHP"><img src="./javascript.jpg" alt="" width="50vw"> </label>
+            </div>
+            <br><br>
+
+            <div>
+                <label for="filme1">Quais desses filmes você assistiu?</label><br>
+                <input type="checkbox" id="filme1" name="filme1" value="O Iluminado">
+                <label for="filme1"><a
+                        href="https://www.imdb.com/title/tt0081505/?ref_=nv_sr_srsg_1_tt_7_nm_0_q_o%2520ilu">O
+                        Iluminado</a></label><br>
+                <input type="checkbox" id="filme2" name="filme2" value="Entrevista com o Vampiro">
+                <label for="filme2"><a
+                        href="https://www.imdb.com/title/tt0110148/?ref_=nv_sr_srsg_3_tt_8_nm_0_q_entrevista%2520com%2520o%2520vampiro">Entrevista
+                        com o Vampiro</a></label><br>
+                <input type="checkbox" id="filme3" name="filme3" value="Pulp Fiction">
+                <label for="filme3"><a
+                        href="https://www.imdb.com/title/tt0110912/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_pulp%2520fictio">Pulp
+                        Fiction</a></label><br>
+                <input type="checkbox" id="filme4" name="filme4" value="Irreversible">
+                <label for="filme4"><a
+                        href="https://www.imdb.com/title/tt0290673/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_irrever">Irreversible</a></label><br>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+
+        </div>
+
+    </form>
+</body>
+
+</html>
