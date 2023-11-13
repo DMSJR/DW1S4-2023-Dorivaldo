@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Praticando 2 - JavaScript - Mini Calculadora</h1>
+    <div class="container">
+        <div class="row">
+            <div class="form-group col-md-2">
+                <label for="numero1">Número 1</label>
+                <input type="number" class="form-control" id="numero1">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="numero2">Número 2</label>
+                <input type="number" class="form-control" id="numero2">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="resultado">Resultado</label>
+                <input type="number" disabled class="form-control" id="resultado">
+                
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary" id="somar">Somar</button>
+                <button type="button" class="btn btn-primary" id="subtrair">Subtrair</button>
+                <button type="button" class="btn btn-primary" id="multiplicar">Multiplicar</button>
+                <button type="button" class="btn btn-primary" id="dividir">Dividir</button>
+        </div>
+
+        </div>
+            
+    </div>
+
+
+    <script>
+        let num1 = parseFloat(document.getElementById("numero1").val);
+        let num2 = parseFloat(document.getElementById("numero2").val);
+        let resultado = 0;
+
+        let btnSomar = document.getElementById("somar");
+        btnSomar.addEventListener("click", function () {
+            let num1 = parseFloat(document.getElementById("numero1").value);
+            let num2 = parseFloat(document.getElementById("numero2").value);
+            let resultado = num1 + num2;
+            document.getElementById("resultado").value = resultado;
+        });
+
+        let btnSubtrair = document.getElementById("subtrair");
+        btnSubtrair.addEventListener("click", function () {
+            let num1 = parseFloat(document.getElementById("numero1").value);
+            let num2 = parseFloat(document.getElementById("numero2").value);
+            let resultado = num1 - num2;
+            document.getElementById("resultado").value = resultado;
+        });
+
+        let btnMultiplicar = document.getElementById("multiplicar");
+        btnMultiplicar.addEventListener("click", function () {
+            let num1 = parseFloat(document.getElementById("numero1").value);
+            let num2 = parseFloat(document.getElementById("numero2").value);
+            let resultado = num1 * num2;
+            document.getElementById("resultado").value = resultado;
+        });
+
+        let btnDividir = document.getElementById("dividir");
+        btnDividir.addEventListener("click", function () {
+            let num1 = parseFloat(document.getElementById("numero1").value);
+            let num2 = parseFloat(document.getElementById("numero2").value);
+            let resultado = num1 / num2;
+            document.getElementById("resultado").value = resultado;
+        });
+
+
+
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
